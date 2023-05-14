@@ -148,7 +148,7 @@ for signalNr = 1:allSettings.sys.nrOfSignals
         axis  (figureHandle(3, 2), 'tight');
         xlabel(figureHandle(3, 2), 'Time (s)');
         ylabel(figureHandle(3, 2), 'Amplitude');
-        title (figureHandle(3, 2), 'Raw DLL discriminator');
+        title (figureHandle(3, 2), 'Raw DLL Discriminator');
 
 %         %----- FLL Lock Indicator------------------------------------------
 %         plot  (figureHandle(3, 3), timeAxisInMs/1000, ...

@@ -39,7 +39,7 @@ codeNco = codeError;
 trackChannelData.codeNco(loopCnt) = codeNco;            
 
 % Calculate code frequency
-codeFreq = codeFreqBasis - codeNco + ( -carrFreq - trackChannelData.intermediateFreq )/trackChannelData.carrToCodeRatio;
+codeFreq = codeFreqBasis - codeNco + ( carrFreq - trackChannelData.intermediateFreq )/trackChannelData.carrToCodeRatio;
 trackChannelData.codeFreq(loopCnt) = codeFreq;
 trackChannelData.prevCodeFreq = codeFreq;
 

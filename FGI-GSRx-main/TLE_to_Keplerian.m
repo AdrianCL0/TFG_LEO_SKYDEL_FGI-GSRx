@@ -11,7 +11,7 @@ filename = 'tle_satellites.txt';
 fid = fopen(filename, 'r');
 
 %Number of satellites to evaluate from file
-num_sats=16;
+num_sats=4000;
 
 % Two-line element set
 % 19-32	04236.56031392	Element Set Epoch (UTC)
@@ -25,7 +25,7 @@ num_sats=16;
 % 64-68	32890	Revolution Number at Epoch 
 
 
-for i=1:16
+for i=1:num_sats
     name = fgets(fid);
     name=name(1:end-1)+"";
     line1 = fgets(fid);
@@ -49,31 +49,38 @@ for i=1:16
     sma = sqrt(( mu/(str2double(tline(53:63))*2*pi/86400)^2 )^(1/3)*1000);    % Root Semi Major Axis
     rNo = str2double(tline(64:68));                                % Revolution Number at Epoch 
     
-    % Orbit elements print in console
-    fprintf("Satellite Name: %s",name);
-    fprintf("Epoch: %12.12f \n",epoch);
-    fprintf("Semi Major Axis: %12.12f \n",sma);
-    fprintf("Eccentricity: %12.12f \n",ecc);
-    fprintf("Argument of Perigree: %12.12f \n",w);
-    fprintf("Mean Anomaly: %12.12f \n",M);
-    fprintf("Inclination: %12.12f \n",inc);
-    fprintf("Right Ascension of Ascending Node: %12.12f \n",raan);
-    fprintf("Revolution Number at Epoch: %12.12f \n\n",rNo);
+   
+
+    if(sma>2634 && sma <2635)
+         % Orbit elements print in console
+        fprintf("Satellite Name: %s",name);
+        fprintf("Epoch: %12.12f \n",epoch);
+        fprintf("Semi Major Axis: %12.12f \n",sma);
+        fprintf("Eccentricity: %12.12f \n",ecc);
+        fprintf("Argument of Perigree: %12.12f \n",w);
+        fprintf("Mean Anomaly: %12.12f \n",M);
+        fprintf("Inclination: %12.12f \n",inc);
+        fprintf("Right Ascension of Ascending Node: %12.12f \n",raan);
+        fprintf("Revolution Number at Epoch: %12.12f \n\n",rNo);
+        fileID = fopen('skydel_leo_satellites.txt','a');
+
+        fprintf(fileID, "Satellite Name: %s\n", name);
+        fprintf(fileID, "Epoch: %12.12f \n", epoch);
+        fprintf(fileID, "Semi Major Axis: %12.12f \n", sma);
+        fprintf(fileID, "Eccentricity: %12.12f \n", ecc);
+        fprintf(fileID, "Argument of Perigree: %12.12f \n", w);
+        fprintf(fileID, "Mean Anomaly: %12.12f \n", M);
+        fprintf(fileID, "Inclination: %12.12f \n", inc);
+        fprintf(fileID, "Right Ascension of Ascending Node: %12.12f \n", raan);
+        fprintf(fileID, "Revolution Number at Epoch: %12.12f \n\n", rNo);
+
+        fclose(fileID);
+    else
+
+    end
 
     %Print info into file
-    fileID = fopen('skydel_leo_satellites.txt','a');
-
-    fprintf(fileID, "Satellite Name: %s\n", name);
-    fprintf(fileID, "Epoch: %12.12f \n", epoch);
-    fprintf(fileID, "Semi Major Axis: %12.12f \n", sma);
-    fprintf(fileID, "Eccentricity: %12.12f \n", ecc);
-    fprintf(fileID, "Argument of Perigree: %12.12f \n", w);
-    fprintf(fileID, "Mean Anomaly: %12.12f \n", M);
-    fprintf(fileID, "Inclination: %12.12f \n", inc);
-    fprintf(fileID, "Right Ascension of Ascending Node: %12.12f \n", raan);
-    fprintf(fileID, "Revolution Number at Epoch: %12.12f \n\n", rNo);
-
-    fclose(fileID);
+    
 
 
 end

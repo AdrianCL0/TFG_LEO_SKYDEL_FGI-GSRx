@@ -1,0 +1,151 @@
+PRN01: STARLINK-5919           
+1 55927C 23037P   23134.01645833 -.00949821  00000+0 -48291-1 0  1346
+2 55927  70.0018  23.4503 0003036 274.4619 119.2334 15.17710698    17
+Satellite Name: STARLINK-5919           
+Epoch: 8534.766458329999 
+Semi Major Axis: 2625.052068766608 
+Eccentricity: 0.000303600000 
+Argument of Perigree: 274.461900000000 
+Mean Anomaly: 119.233400000000 
+Inclination: 70.001800000000 
+Right Ascension of Ascending Node: 23.450300000000 
+Revolution Number at Epoch: 1.000000000000 
+
+//////////////////////////////////////////////////////////////////////////
+
+PRN02: STARLINK-1055           
+1 44760C 19074AZ  23133.91784722  .00017254  00000+0  90104-3 0  1339
+2 44760  53.0528 169.9838 0003888  19.7301  42.8727 15.15378477    17
+Satellite Name: STARLINK-1055           
+Epoch: 8534.667847220000 
+Semi Major Axis: 2626.398061109979 
+Eccentricity: 0.000388800000 
+Argument of Perigree: 19.730100000000 
+Mean Anomaly: 42.872700000000 
+Inclination: 53.052800000000 
+Right Ascension of Ascending Node: 169.983800000000 
+Revolution Number at Epoch: 1.000000000000
+
+
+//////////////////////////////////////////////////////////////////////////
+
+PRN03: STARLINK-2438           
+1 48103C 21027M   23134.14562500  .00025089  00000+0  13639-2 0  1342
+2 48103  53.0527  95.1540 0006716  35.6451  80.3585 15.13934871    10
+Satellite Name: STARLINK-2438           
+Epoch: 8534.895624999999 
+Semi Major Axis: 2627.232592720801 
+Eccentricity: 0.000671600000 
+Argument of Perigree: 35.645100000000 
+Mean Anomaly: 80.358500000000 
+Inclination: 53.052700000000 
+Right Ascension of Ascending Node: 95.154000000000 
+Revolution Number at Epoch: 1.000000000000 
+
+//////////////////////////////////////////////////////////////////////////
+
+PRN04: STARLINK-1490           
+1 45777C 20038AZ  23133.88659722  .00008375  00000+0  48880-3 0  1335
+2 45777  53.0525 141.8051 0004251  64.6877 143.1633 15.11422325    10
+Satellite Name: STARLINK-1490           
+Epoch: 8534.636597220000 
+Semi Major Axis: 2628.687599308786 
+Eccentricity: 0.000425100000 
+Argument of Perigree: 64.687700000000 
+Mean Anomaly: 143.163300000000 
+Inclination: 53.052500000000 
+Right Ascension of Ascending Node: 141.805100000000 
+Revolution Number at Epoch: 1.000000000000 
+
+//////////////////////////////////////////////////////////////////////////
+
+PRN05: STARLINK-3277           
+1 50182C 21125AC  23134.14631944 -.00198058  00000+0 -11897-1 0  1342
+2 50182  53.2152 195.2823 0001193  77.9475 244.9670 15.10601161    14
+Satellite Name: STARLINK-3277           
+Epoch: 8534.896319440000 
+Semi Major Axis: 2629.163831919941 
+Eccentricity: 0.000119300000 
+Argument of Perigree: 77.947500000000 
+Mean Anomaly: 244.967000000000 
+Inclination: 53.215200000000 
+Right Ascension of Ascending Node: 195.282300000000 
+Revolution Number at Epoch: 1.000000000000 
+
+
+//////////////////////////////////////////////////////////////////////////
+
+PRN07: STARLINK-4075           
+1 52670C 22053Q   23134.11090278  .00001889  00000+0  11845-3 0  1341
+2 52670  53.2159 100.6321 0001247  85.9894 300.0912 15.08839277    13
+Satellite Name: STARLINK-4075           
+Epoch: 8534.860902779999 
+Semi Major Axis: 2630.186799238173 
+Eccentricity: 0.000124700000 
+Argument of Perigree: 85.989400000000 
+Mean Anomaly: 300.091200000000 
+Inclination: 53.215900000000 
+Right Ascension of Ascending Node: 100.632100000000 
+Revolution Number at Epoch: 1.000000000000 
+
+//////////////////////////////////////////////////////////////////////////
+
+PRN08: STARLINK-1007           
+1 44713C 19074A   23133.89423611  .00007923  00000+0  53097-3 0  1333
+2 44713  53.0537 134.0342 0001190  89.5993 270.5413 15.06381740    13
+Satellite Name: STARLINK-1007           
+Epoch: 8534.644236110000 
+Semi Major Axis: 2631.616332745652 
+Eccentricity: 0.000119000000 
+Argument of Perigree: 89.599300000000 
+Mean Anomaly: 270.541300000000 
+Inclination: 53.053700000000 
+Right Ascension of Ascending Node: 134.034200000000 
+Revolution Number at Epoch: 1.000000000000 
+
+//////////////////////////////////////////////////////////////////////////
+
+PRN09: STARLINK-5667           
+1 55337C 23013G   23134.04631944 -.00876359  00000+0 -62241-1 0  1342
+2 55337  43.0012 127.5465 0001604 270.6601  81.2337 15.04842736    13
+Satellite Name: STARLINK-5667           
+Epoch: 8534.796319440000 
+Semi Major Axis: 2632.513145876625 
+Eccentricity: 0.000160400000 
+Argument of Perigree: 270.660100000000 
+Mean Anomaly: 81.233700000000 
+Inclination: 43.001200000000 
+Right Ascension of Ascending Node: 127.546500000000 
+Revolution Number at Epoch: 1.000000000000 
+//////////////////////////////////////////////////////////////////////////
+
+PRN11: STARLINK-5717           
+1 55618C 23020BB  23134.04631944  .00007182  00000+0  53008-3 0  1343
+2 55618  43.0009 191.7208 0001634 263.1412 173.6643 15.02517869    19
+Satellite Name: STARLINK-5717           
+Epoch: 8534.796319440000 
+Semi Major Axis: 2633.870221030469 
+Eccentricity: 0.000163400000 
+Argument of Perigree: 263.141200000000 
+Mean Anomaly: 173.664300000000 
+Inclination: 43.000900000000 
+Right Ascension of Ascending Node: 191.720800000000 
+Revolution Number at Epoch: 1.000000000000 
+//////////////////////////////////////////////////////////////////////////
+
+PRN12: STARLINK-4444           
+1 53507C 22099AU  23134.08590278 -.00008286  00000+0 -64649-3 0  1342
+2 53507  97.6549 255.6610 0000958 194.9621 165.9666 15.01263210    12
+Satellite Name: STARLINK-4444           
+Epoch: 8534.835902780000 
+Semi Major Axis: 2634.603756360314 
+Eccentricity: 0.000095800000 
+Argument of Perigree: 194.962100000000 
+Mean Anomaly: 165.966600000000 
+Inclination: 97.654900000000 
+Right Ascension of Ascending Node: 255.661000000000 
+Revolution Number at Epoch: 1.000000000000 
+
+
+
+
