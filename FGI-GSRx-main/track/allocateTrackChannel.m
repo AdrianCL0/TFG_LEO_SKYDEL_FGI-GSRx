@@ -80,6 +80,7 @@ trackChannel.pllDampingRatio = signalSettings.pllDampingRatio; % PLL loop dampin
 trackChannel.pllFilter = 0; % PLL loop filter output
 trackChannel.prevIR4 = 0; % Intermediate value from PLL loop filter from previous round
 trackChannel.prevIR2_PLL = [0 0 0 0];
+trackChannel.jitter = [0 0 0 0];
 trackChannel.prevIR5_PLL = [0 0 0 0];
 trackChannel.phaseDiscrFilt=0;
 

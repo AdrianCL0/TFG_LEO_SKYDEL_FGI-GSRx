@@ -28,6 +28,7 @@ end
 Wn = BWPLL/0.7845;
 
 phi_ddd = Wn^3*pllDiscr;
+trackChannelData.jitter(loopCnt+4)=phi_ddd;
 phi_dd = 1.1*Wn^2*pllDiscr;
 phi_d = 2.4*Wn*pllDiscr;
 

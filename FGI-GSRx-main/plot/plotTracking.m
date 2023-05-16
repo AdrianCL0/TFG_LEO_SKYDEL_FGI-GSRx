@@ -139,7 +139,7 @@ for signalNr = 1:allSettings.sys.nrOfSignals
         axis  (figureHandle(3, 1), 'tight');
         xlabel(figureHandle(3, 1), 'Time (s)');
         ylabel(figureHandle(3, 1), 'Amplitude');
-        title (figureHandle(3, 1), 'PLL Lock Discriminator');
+        title (figureHandle(3, 1), 'PLL Discriminator');
 
         %----- Unfiltered DLL discriminator--------------------------------
         plot  (figureHandle(3, 2), timeAxisInMs/1000,tC.dllDiscr(timeAxisInMs), 'r');      
@@ -166,7 +166,7 @@ for signalNr = 1:allSettings.sys.nrOfSignals
         axis  (figureHandle(3, 3), 'tight');
         xlabel(figureHandle(3, 3), 'Time (s)');
         ylabel(figureHandle(3, 3), 'Amplitude');
-        title (figureHandle(3, 3), 'FLL Lock Discriminator');
+        title (figureHandle(3, 3), 'FLL Discriminator');
     end % for channelNr 
     
     figure; hold on; grid on;        

@@ -34,14 +34,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % System parameters
 sys,enabledSignals,[{['gale1b']}], % List of enabled signals
-sys,msToProcess,2000,       % Number of ms to process in total from data file. If 0 the maximum number of ms will be processed
+sys,msToProcess,50000,       % Number of ms to process in total from data file. If 0 the maximum number of ms will be processed
 sys,msToSkip,100,             % Number of ms to skip from beginning of file
 
 % Input/Output file names
 sys,loadDataFile,false,     % Defines if data file is to be loaded
-sys,dataFileIn,'C:\Users\tfg\Desktop\TFG_Telecos\FGI-GSRx-main\results\BigLeoStarlink_results.mat',          % Datafile to load of enabled
+sys,dataFileIn,'C:\Users\tfg\Desktop\TFG_Telecos\FGI-GSRx-main\results\BigLeoStarlink_results_100.mat',          % Datafile to load of enabled
 sys,saveDataFile,true,     % Defines if data should be stored to file
-sys,dataFileOut,'C:\Users\tfg\Desktop\TFG_Telecos\FGI-GSRx-main\results\BigLeoStarlink_results.mat',  % Data file for storing output
+sys,dataFileOut,'C:\Users\tfg\Desktop\TFG_Telecos\FGI-GSRx-main\results\BigLeoStarlink_results_100.mat',  % Data file for storing output
 sys,loadIONMetaDataReading,false,
 sys,metaDataFileIn,''
 
