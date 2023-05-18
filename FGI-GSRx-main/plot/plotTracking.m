@@ -167,6 +167,13 @@ for signalNr = 1:allSettings.sys.nrOfSignals
         xlabel(figureHandle(3, 3), 'Time (s)');
         ylabel(figureHandle(3, 3), 'Amplitude');
         title (figureHandle(3, 3), 'FLL Discriminator');
+        
+        if (tC.SvId.satId<10)
+            prn_label="0"+num2str(tC.SvId.satId);
+        else
+            prn_label=num2str(tC.SvId.satId);
+        end
+        sgtitle("PRN"+ prn_label+" Tracking Results");
     end % for channelNr 
     
     figure; hold on; grid on;        

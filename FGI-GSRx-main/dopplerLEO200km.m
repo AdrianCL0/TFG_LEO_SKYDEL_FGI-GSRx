@@ -1,15 +1,15 @@
 clc;
 clear all;
-load('Doppler01.txt');
-load('Doppler02.txt');
-load('Doppler03.txt');
-load('Doppler04.txt');
-load('Doppler05.txt');
-load('Doppler07.txt');
-load('Doppler08.txt');
-load('Doppler09.txt');
-load('Doppler11.txt');
-load('Doppler12.txt');
+load('./FGI-GSRx-main/exceldata/LEO200km/Doppler01.txt');
+load('./FGI-GSRx-main/exceldata/LEO200km/Doppler02.txt');
+load('./FGI-GSRx-main/exceldata/LEO200km/Doppler03.txt');
+load('./FGI-GSRx-main/exceldata/LEO200km/Doppler04.txt');
+load('./FGI-GSRx-main/exceldata/LEO200km/Doppler05.txt');
+load('./FGI-GSRx-main/exceldata/LEO200km/Doppler07.txt');
+load('./FGI-GSRx-main/exceldata/LEO200km/Doppler08.txt');
+load('./FGI-GSRx-main/exceldata/LEO200km/Doppler09.txt');
+load('./FGI-GSRx-main/exceldata/LEO200km/Doppler11.txt');
+load('./FGI-GSRx-main/exceldata/LEO200km/Doppler12.txt');
 
 file="BigLeo_200km_results.mat";
 row=2;
