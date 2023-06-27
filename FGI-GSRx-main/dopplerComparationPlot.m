@@ -1,5 +1,6 @@
 clc;
 clear all;
+close all;
 load('PRN01.txt');
 load('PRN02.txt');
 load('PRN03.txt');
@@ -31,29 +32,33 @@ load(file1);
 
 DopplerSkydel = -[PRN01 PRN02 PRN03 PRN04 PRN05 PRN07 PRN08 PRN09 PRN11 PRN12];
 
-DopplerSkydel = DopplerSkydel(1:496,:);
+DopplerSkydel = DopplerSkydel(1:496,:)./1000; %Hz to kHz
 
 labels =["01" "02" "03" "04" "05" "07" "08" "09" "11" "12"];
 
 tiledlayout(row,column)
 for i=1:num_sats
     
-    axis = 500:100:50000;
+    axis = 500/1000:100/1000:50000/1000; %ms to s
     
-    %     figure;
+    %figure;
     nexttile;
-    plot(axis, DopplerSkydel(:,i), '.');
+    plot(axis, DopplerSkydel(:,i), '.',"Color","green");
     hold on;
     
-    axis = 1:4:50000;
+    axis = 1/1000:4/1000:50000/1000; %ms to s
     DopplerFGI=trackData.gale1b.channel(i).doppler.';
-    DopplerFGI = DopplerFGI(4:4:end, :);
+    DopplerFGI = DopplerFGI(4:4:end, :)./1000; %Hz to kHz
 
-    plot(axis, DopplerFGI, '.');
+    plot(axis, DopplerFGI, '.',"Color","blue");
     hold off;
 
-    xlim([0 50000])
-    title("Doppler for PRN"+labels(i)+ " Default");
+    xlim([0 50]);
+    xlabel("Time (s)");
+    if(i==1 || i==6)
+        ylabel("Doppler (kHz)");
+    end
+    title("PRN"+labels(i)+ " Default");
     
 end
 
@@ -63,22 +68,26 @@ figure;
 tiledlayout(row,column)
 for i=1:num_sats
 
-    axis = 500:100:50000;
+    axis = 500/1000:100/1000:50000/1000; %ms to s
 
     %     figure;
     nexttile;
-    plot(axis, DopplerSkydel(:,i), '.');
+    plot(axis, DopplerSkydel(:,i), '.',"Color","green");
     hold on;
 
-    axis = 1:4:50000;
+    axis = 1/1000:4/1000:50000/1000; %ms to s
     DopplerFGI=trackData.gale1b.channel(i).doppler.';
-    DopplerFGI = DopplerFGI(4:4:end, :);
+    DopplerFGI = DopplerFGI(4:4:end, :)./1000; %Hz to kHz
 
-    plot(axis, DopplerFGI, '.');
+    plot(axis, DopplerFGI, '.',"Color","blue");
     hold off;
 
-    xlim([0 50000])
-    title("Doppler for PRN"+labels(i) + " Advanced");
+    xlim([0 50])
+    xlabel("Time (s)");
+    if(i==1 || i==6)
+        ylabel("Doppler (kHz)");
+    end
+    title("PRN"+labels(i) + " Advanced");
     
 end
 

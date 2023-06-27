@@ -39,7 +39,7 @@ sys,msToSkip,100,             % Number of ms to skip from beginning of file
 
 % Input/Output file names
 sys,loadDataFile,true,     % Defines if data file is to be loaded
-sys,dataFileIn,'C:\Users\tfg\Desktop\TFG_Telecos\FGI-GSRx-main\results\BigLeo2_acq_result.mat',          % Datafile to load of enabled
+sys,dataFileIn,'C:\Users\tfg\Desktop\TFG_Telecos\FGI-GSRx-main\results\BigLeo2_advanced_track_result2.mat',          % Datafile to load of enabled
 sys,saveDataFile,true,     % Defines if data should be stored to file
 sys,dataFileOut,'C:\Users\tfg\Desktop\TFG_Telecos\FGI-GSRx-main\results\BigLeo2_advanced_track_result2.mat',  % Data file for storing output
 sys,loadIONMetaDataReading,false,
