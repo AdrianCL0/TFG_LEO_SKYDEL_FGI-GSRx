@@ -1,1 +1,8 @@
-# TFG_LEO_SKYDEL_FGI
+# Design and Simulation of LEO Constellations using Skydel and Processing with FGI-GSRx
+Low Earth Orbit (LEO) satellite constellations have emerged as a solution to the demand for global communications, Earth observation, environmental monitoring and satellite navigation services. LEO constellations offer greater data transmission capacity, better image resolution and greater navigation accuracy compared to satellites in higher orbits. In addition, its lower altitude allows for less latency in communications and a greater number of visits per day, which improves the coverage and availability of satellite services. However, designing and implementing a LEO constellation requires a large effort in satellite coordination, orbit control, interference mitigation, and space debris management. In this work we will study what LEO orbits are and what characteristics they present. In addition, we will analyze how GNSS navigation works, and specifically how the GPS and Galileo systems work. Afterwards, using the Skydel simulator we will simulate the transmission of GPS and Galileo signals to different points on the planet and using the FGI-GSRx software receiver we will analyze the data generated. Finally, with Skydel we will design our LEO constellation in Starlink orbit transmitting the Galileo E1 signal and process it with the FGI-GSRx.
+
+## LEO Tracking Results before FGI-GSRx Modifications
+![image](https://github.com/AdrianCL0/TFG_LEO_SKYDEL_FGI/assets/100357161/aba8cf7a-abc4-4af4-a2c3-d5c3d72b3358)
+
+## LEO Tracking Results after FGI-GSRx Modifications
+![image](https://github.com/AdrianCL0/TFG_LEO_SKYDEL_FGI/assets/100357161/b9dbcb93-0d5e-43ba-aac6-f087f71f9616)
